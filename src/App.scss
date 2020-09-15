@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+.App {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+		background: linear-gradient(45deg, #FFBBEC, #A9C9FF);
+		color: #323232;
+}
+h1 {
+		font-size: 3.2rem;
+		font-weight: 700;
+}
+h2 {
+		font-size: 2.8rem;
+		font-weight: 500;
+}
+p {
+		font-size: 2rem;
+		font-weight: 300;	
+}
+.title {
+		color: #323232;
+}
+.containerStyles {
+	  height: 2rem;
+    width: 50rem;
+    background-color: #eee;
+    border: 2px solid #323232;
+    border-radius: 10px;
+    margin: auto,
+}
+.fillerStyles {
+		height: 100%;
+		background-color: blueviolet;
+    border-radius: 7px;
+}
+.gameButtons {
+		display: flex;
+		width: 50rem;
+		margin: auto;
+		justify-content: space-around;
+		margin-top: 5rem;
+}
+.answerButton {
+		font-size: 2.4rem;
+		background-color: #eee;
+		border: 2px solid #323232;
+		border-radius: 10px;
+		width: 10rem;
+		padding: 0.5rem;
+		cursor: pointer;
+		text-decoration: none;
+		transition: all 0.2s ease;
+		box-shadow: 0 0 10px blueviolet;
+}
+.answerButton:hover {
+	background-color: blueviolet;
+	color: white;
+}
+.answerButton:focus {
+	outline: none;
+}
+
+.fade {
+		border: 5px solid #323232;
+		border-radius: 10px;
+		position: relative;
+		text-align: center;
+		width: 50rem;
+		margin: auto;
+		top: 10vh;
+		background-color: #fff;
+		p {
+			padding: 0 5rem;
+		}
+}
+.fade:focus {
+	outline: none;
+}
+.fadeRe {
+	p {
+		padding: 0 5rem;
+		margin: 5rem 0 1rem 0;
+	}
+}
+.startButton {
+		cursor: pointer;
+		width: 25rem;
+		height: 5rem;
+		border: none;
+		border-radius: 10px;
+		font-size: 2.8rem;
+		background-color: blueviolet;
+		box-shadow: 0 0 10px 1px blueviolet;
+		color: #fff;
+		margin-bottom: 5rem;
+}
+.startButton:focus {
+		outline: none;
+}
+.iconContainer {
+		margin: 0 auto 5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+.secondText {
+		padding: 0 2rem;
+}
+
+
+// Mobile Styles
+@media (max-width: 650px) {
+	.mobileContent {
+		position: relative;
+		top: 50%;
+		transform: translateY(-80%);
+	}
+	.fade	{
+		width: 30rem;
+
+		h2 {
+			padding: 0 2rem;
+		}
+		p {
+			padding: 0 3rem;
+		}
+	}
+	.containerStyles {
+		width: 30rem;
+	}
+	.gameButtons {
+		width: 30rem;
+	}
+	.answerButton {
+		width: 8rem;
+	}
+	.answerButton:hover {
+		background-color: #eee;
+		color: #323232;
+	}
+} 
+
